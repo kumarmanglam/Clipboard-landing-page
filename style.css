@@ -46,10 +46,11 @@ p {
 }
 
 .header-title p {
-    max-width: 60vw;
+    max-width: 70vw;
 }
 
 .header-title h1 {
+    width: 80vw;
     font-weight: 600;
     padding: 10px 0;
 }
@@ -92,6 +93,7 @@ p {
 }
 
 .main-feature p {
+    width: 65vw;
     max-width: calc(960em/16);
     text-align: center;
 }
@@ -168,7 +170,7 @@ footer{
 
 .page-links{
     display: grid;
-    max-width: 40vw;
+    max-width: 65vw;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
 }
@@ -185,7 +187,6 @@ footer{
         width: 60vw;
         margin-inline: auto;
     }
-
     .advantage h3{
         margin: 10px 0;
     }
@@ -203,5 +204,13 @@ footer{
     .main-img {
         width: 80vw;
         margin-inline: auto;
+    }
+    
+    .page-links{
+        margin: 35px auto;
+    }
+
+    footer{
+        flex-direction: column;   
     }
 }
