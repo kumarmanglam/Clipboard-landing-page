@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+button{
+    border: none;
+}
+
 :root {
     --Strong-Cyan: hsl(171, 66%, 44%);
     --Light-Blue: hsl(233, 100%, 69%);
@@ -47,6 +51,7 @@ p {
 
 .header-title p {
     max-width: 70vw;
+    margin-top: 25px;
 }
 
 .header-title h1 {
@@ -65,10 +70,27 @@ p {
 }
 
 .btn {
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 18px;
     padding: 5px 25px;
     border-radius: 15px;
     color: white;
     font-weight: 600;
+    transition: ease-in-out 0.1s;
+}
+
+.btn:hover {
+    cursor: pointer;
+    transition: ease-in-out 0.2s;
+    transform: scale(1.05); 
+}
+
+.ios:hover{
+    background-color: #5DCCBB;
+}
+
+.mac:hover{
+    background-color: #8896FF;
 }
 
 .ios {
@@ -85,14 +107,20 @@ p {
     align-items: center;
     
     margin: 100px 0;
+    margin-bottom: 50px;
+}
+
+.one{
+    margin-top: 120px;
+    margin-bottom: 25px;
+}
+.main-feature h2 {
+    text-align: center;
 }
 
 .main-feature p {
     width: 80vw;
     margin: 20px 0;
-}
-
-.main-feature p {
     width: 65vw;
     max-width: calc(960em/16);
     text-align: center;
@@ -104,6 +132,7 @@ p {
     max-width: calc(960em/16);
     width: 100vw;
     margin: 100px auto;
+    margin-top: 0px;
 }
 
 .advantages {
@@ -123,6 +152,7 @@ p {
 .computer-image {
     position: relative;
     left: -250px;
+    margin-top: 0;
 }
 
 .main-image {
@@ -130,6 +160,7 @@ p {
     justify-content: center;
     max-width: 80vw;
     margin: 100px auto;
+    margin-top: 50px;
 }
 
 .feature-card {
@@ -139,7 +170,9 @@ p {
     flex-wrap: wrap;
     gap: 50px;
     max-width: 80vw;
+    margin-top: 50px;
 }
+
 
 .card{
     text-align: center;
@@ -155,7 +188,7 @@ p {
     flex-wrap: wrap;
     gap: 50px;
     max-width: 80vw;
-    margin: 100px auto;
+    margin: 150px auto;
 }
 
 footer{
@@ -170,9 +203,42 @@ footer{
 
 .page-links{
     display: grid;
-    max-width: 65vw;
+    max-width: 70vw;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
+    gap: 10px 15px;
+    text-decoration: none;
+}
+
+a{
+    text-transform: none;
+    text-decoration: none;
+}
+
+.page-links>*{
+    color: #1d1d1d;
+    transition: ease-in-out 0.2s;
+}
+
+.page-links>*:hover {
+    cursor: pointer;
+    color: black;
+    transition: ease-in-out 0.2s;
+    transform: scale(1.05); 
+}
+
+.social-media {
+    display: flex;
+    gap: 5px 20px;
+    transition: ease-in-out 0.2s;
+}
+
+.social-media>*{
+    transition: ease-in-out 0.2s;
+}
+
+.social-media>*:hover{
+    transition: ease-in-out 0.2s;
+    transform: scale(1.05); 
 }
 
 @media (max-width: 940px){
@@ -190,6 +256,7 @@ footer{
     .advantage h3{
         margin: 10px 0;
     }
+
     .computer-image {
         position: relative;
         left: 0;
